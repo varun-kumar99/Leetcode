@@ -12,10 +12,7 @@ public class Find1stAndLastPositionofElement_34 {
 		}
 		int target = sc.nextInt();
 		searchRange(A,  target);
-		for(int i =0;i<A.length;i++) {
-			System.out.println(A[i]);
-		}
-		
+	
 	}
 	 public static int[] searchRange(int[] nums, int target) {
          int[] result = new int[2];
