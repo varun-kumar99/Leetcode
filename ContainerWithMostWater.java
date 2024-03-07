@@ -12,22 +12,23 @@ public class ContainerWithMostWater {
 		for (int i = 0; i < n; i++) {
 			A[i] = sc.nextInt();
 		}
-System.out.println( maxArea(A));
+		System.out.println(maxArea(A));
 	}
-	 public static int maxArea(int[] height) {
-	       int left = 0;
-	        int right = height.length - 1;
-	        int max = 0;
-	        while(left < right){
-	            int currentMin = Math.min(height[left], height[right]);
-	            max = Math.max(max, currentMin * (right - left));
-	            if(height[left] < height[right]){
-	                left++;
-	            }else{
-	                right--;
-	            }
-	        }
-	        return max;
-	    }
+
+	public static int maxArea(int[] height) {
+		int left = 0;
+		int right = height.length - 1;
+		int max = 0;
+		while (left < right) {
+			int currentMin = Math.min(height[left], height[right]);
+			max = Math.max(max, currentMin * (right - left));
+			if (height[left] < height[right]) {
+				left++;
+			} else {
+				right--;
+			}
+		}
+		return max;
+	}
 
 }
