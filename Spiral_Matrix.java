@@ -10,7 +10,7 @@ public class Spiral_Matrix {
 	    int m = sc.nextInt();
 	    int arr [] []= new int[n][m];
 	    for(int i = 0; i<n;i++) {
-	    	for(int j=i;j<m;j++) {
+	    	for(int j=0;j<m;j++) {
 	    		sc.nextInt();
 	    	}
 	    }
