@@ -2,13 +2,9 @@ package Leetcode;
 
 public class Text_Justification_68 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-
-	}
-	  public static List<String> fullJustify(String[] words, int maxWidth) {
-	        public List<String> ans = new ArrayList<>();
+	
+	  public  List<String> fullJustify(String[] words, int maxWidth) {
+	         List<String> ans = new ArrayList<>();
 	        int i = 0;
 	        
 	        while (i < words.length) {
