@@ -1,12 +1,20 @@
 package Leetcode;
-
+import java.util.*;
 public class GroupAnagrams_49 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		 int n = sc.nextInt();
+		 String[] strs = new String[n];
+	        for (int i = 0; i < n; i++) {
+	            strs[i] = sc.next();
+	        }
+		 List<List<String>> anagrams = groupAnagrams(strs);
+		 System.out.println(anagrams);
 	}
 	
-	 public String getSignature(String s) {
+	 public static String getSignature(String s) {
 	        int[] count = new int[26];
 	        for (char c : s.toCharArray()) {
 	            count[c - 'a']++;
@@ -21,7 +29,7 @@ public class GroupAnagrams_49 {
 	        return sb.toString();
 	    }
 
-	    public List<List<String>> groupAnagrams(String[] strs) {
+	    public  static List<List<String>> groupAnagrams(String[] strs) {
 	        List<List<String>> result = new ArrayList<>();
 	        Map<String, List<String>> groups = new HashMap<>();
 
@@ -32,5 +40,5 @@ public class GroupAnagrams_49 {
 	        result.addAll(groups.values());
 
 	        return result;
-
+	    }
 }
