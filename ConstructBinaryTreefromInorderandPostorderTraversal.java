@@ -1,0 +1,10 @@
+package Leetcode;
+
+public class ConstructBinaryTreefromInorderandPostorderTraversal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
