@@ -1,5 +1,5 @@
 package Leetcode;
-
+import java.util.*;
 public class Text_Justification_68 {
 
 	
@@ -16,7 +16,7 @@ public class Text_Justification_68 {
 	        return ans;
 	    }
 	    
-	    private List<String> getWords(int i, String[] words, int maxWidth) {
+	    private static List<String> getWords(int i, String[] words, int maxWidth) {
 	        List<String> currentLine = new ArrayList<>();
 	        int currLength = 0;
 
